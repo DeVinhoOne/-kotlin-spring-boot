@@ -1,5 +1,6 @@
 package com.example.kotlinspringboot.dto
 
-import com.example.kotlinspringboot.model.Product
+import java.time.LocalDateTime
+import java.util.*
 
-data class GetProductResponseDTO(val products: List<Product>)
+data class GetProductResponseDTO(val id: UUID, val name: String, val price: Double, val createdAt: LocalDateTime)
